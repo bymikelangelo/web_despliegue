@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Formulario de opinión">
+		<meta name="keywords" content=" formulario, consolas, nintendo, playstation, xbox, pc, juegos, videojuegos">
+		<meta name="author" content="Mikelangelo">
+		<meta name="copyright" content="Mikelangelo">
+		<title>Formulario</title>
+	</head>
+	<body>
+	<p>
+		Nos encantaría que rellenases este formulario para darnos el <b>feedback</b> que necesitamos para ser cada vez mejores.<br>
+		Cuando termines, haz click en el botón <i>enviar</i> debajo del cuestionario. Si deseas borrar los datos introducidos, haz click en <i>resetear</i>.
+	</p>
+		<form action="datos_form.php" method="get">
+			<fieldset>
+				<legend><h3>Datos personales</h3></legend>
+					<label for="nombre">Escribe tu nombre:</label><br>
+					<input type="text" maxlength="50" id="nombre" name="nombre" autocomplete="on"><br>
+					<br>
+					<label for="1apellido">Escribe el primer apellido:</label><br>
+					<input type="text" maxlength="50" id="1apellido" name="1apellido" autocomplete="on"><br>
+					<br>
+					<label for="2apellido">Escribe el segundo apellido:</label><br>
+					<input type="text" maxlength="50" id="2apellido" name="2apellido" autocomplete="on"><br>
+					<p>
+						¿Eres?<br>
+						<input type="radio" id="hombre" name="sexo" value="hombre">
+						<label for="hombre">Hombre</label><br>
+						<input type="radio" id="mujer" name="sexo" value="mujer">
+						<label for="mujer">Mujer</label><br>
+						<input type="radio" id="otro" name="sexo" value="otro">
+						<label for="otro">Otro</label><br>
+					</p>
+					<label for="nacimiento">Introduce tu fecha de nacimiento:</label><br>
+					<input type="date" id="nacimiento" name="nacimiento"><br>
+					<br>
+					<label for="email">Introduce tu email:</label><br>
+					<input type="email" id="email" name="email" autocomplete="on" value="example@gmail.com"><br>
+					<br>
+			</fieldset>
+			<fieldset>
+				<legend><h3>Sobre tus gustos</h3></legend>
+					<label for="juegos">Introduce el número aproximado de juegos que crees poseer.</label><br>
+					<input type="number" min="0" max="9999" step="2" id="juegos" name="juegos" value="0">
+					<p>
+						¿Que empresa de videoconsolas tiene uno filosofía de juego más a tu gusto?:<br>
+						<input type="radio" id="nintendo" name="empresajuegos" value="nintendo">
+						<label for="nintendo">Nintendo</label><br>
+						<input type="radio" id="sony" name="empresajuegos" value="sony">
+						<label for="sony">SONY</label><br>
+						<input type="radio" id="microsoft" name="empresajuegos" value="microsoft">
+						<label for="microsoft">Microsoft</label><br>
+						<input type="radio" id="sega" name="empresajuegos" value="sega">
+						<label for="sega">SEGA</label><br>
+						<input type="radio" id="pc" name="empresajuegos" value="pc">
+						<label for="pc">Prefiero el PC</label><br>	
+					</p>
+					<p>
+						¿Que géneros de videojuegos te gustan?:<br>
+						<input type="checkbox" id="videojuegos1" name="videojuegos" value="accion">
+						<label for="videojuegos1">Acción/Aventura</label><br>
+						<input type="checkbox" id="videojuegos2" name="videojuegos" value="plataformas">
+						<label for="videojuegos2">Plataformas</label><br>
+						<input type="checkbox" id="videojuegos3" name="videojuegos" value="rol">
+						<label for="videojuegos3">Rol</label><br>
+						<input type="checkbox" id="videojuegos4" name="videojuegos" value="puzzle">
+						<label for="videojuegos4">Puzzle</label><br>
+						<input type="checkbox" id="videojuegos5" name="videojuegos" value="lucha">
+						<label for="videojuegos4">Lucha</label><br>
+					</p>
+					<p>
+						¿Que tipo de videoconsolas / PC prefieres para jugar?:<br>
+						<input type="radio" id="videoconsolas1" name="tipoconsolas" value="sobremesa">
+						<label for="videojuegos1">De sobremesa</label><br>
+						<input type="radio" id="videoconsolas2" name="tipoconsolas" value="portatiles">
+						<label for="videojuegos2">Portátiles</label><br>					
+					</p>
+					<p>
+						¿Cuales de los siguientes sistemas de juego tienes y <b>sigues utilizando con cierta frecuencia</b>?:<br>
+						<input type="checkbox" id="play3" name="consola" value="play3">
+						<label for="play3">PlayStation 3 o anteriores</label><br>
+						<input type="checkbox" id="play4" name="consola" value="play4">
+						<label for="play4">PlayStation 4</label><br>
+						<input type="checkbox" id="play5" name="consola" value="play5">
+						<label for="play5">PlayStation 5</label><br>
+						<input type="checkbox" id="psp" name="consola" value="psp">
+						<label for="psp">PlayStation Portable (PSP)</label><br>
+						<input type="checkbox" id="psvita" name="consola" value="psvita">
+						<label for="psvita">PlayStation Vita (PSVita)</label><br>
+						<input type="checkbox" id="xbox360" name="consola" value="xbox360">
+						<label for="xbox360">Xbox 360 o anteriores</label><br>
+						<input type="checkbox" id="xboxone" name="consola" value="xboxone">
+						<label for="xboxone">Xbox One</label><br>
+						<input type="checkbox" id="xboxseries" name="consola" value="xboxseries">
+						<label for="xboxseries">Xbox Series</label><br>
+						<input type="checkbox" id="wii" name="consola" value="wii">
+						<label for="wii">Nintendo Wii o anteriores</label><br>
+						<input type="checkbox" id="wiiu" name="consola" value="wiiu">
+						<label for="wiiu">Nintendo Wii U</label><br>
+						<input type="checkbox" id="switch" name="consola" value="switch">
+						<label for="switch">Nintendo Switch</label><br>
+						<input type="checkbox" id="ds" name="consola" value="ds">
+						<label for="ds">Nintendo DS o anteriores</label><br>
+						<input type="checkbox" id="3ds" name="consola" value="3ds">
+						<label for="3ds">Nintendo 3DS</label><br>
+						<input type="checkbox" id="dreamcast" name="consola" value="dreamcast">
+						<label for="dreamcast">Dreamcast o anteriores</label><br>
+						<input type="checkbox" id="pcgaming" name="consola" value="pcgaming">
+						<label for="pcgaming">PC Gaming</label><br>
+					</p>
+			</fieldset>
+			<fieldset>
+				<legend><h3>Sobre el contenido</h3></legend>
+					<label for="tematica">¿Cual es tu opinión sobre la <b>temática</b> del artículo?. Selecciona una opción.</label><br>
+					<select id="tematica" name="tematica">
+						<option value="1">Prefiero otra temática totalmente distinta.</option>
+						<option value="2">Prefiero una temática de videojuegos mas actuales.</option>
+						<option value="3">Me interesa el tema de videojuegos retro.</option>
+						<option value="4">Me gustan los videojuegos retro y el tema hablado.</option>
+						<option value="5">Me encantan lo retro y la Game Boy especialmente.</option>
+					</select><br>
+					<br>
+					<label for="calidad">¿Que opinas de la <b>calidad</b> del artículo?. Selecciona una opción.</label><br>
+					<select id="calidad" name="calidad">
+						<option value="1">Muy mala.</option>
+						<option value="2">Regular.</option>
+						<option value="3">Normal.</option>
+						<option value="4">Muy bien.</option>
+						<option value="4">Excelente.</option>
+					</select><br>
+					<br>
+					<label for="nota">¿Que puntuación del 1 al 10 darias a nuestro artículo.</label><br>
+					<input type="number" min="0" max="10" step="2" id="nota" name="nota" value="0"><br>
+					<br>
+					<label for="sugerencias">¿Tienes alguna sugerencia o comentario extra? Nos encantaría conocerla :).</label><br>
+					<textarea rows="7" cols="70" maxlength="700" id="sugerencias" name="sugerencias">Escribe aquí tus comentarios o sugerencias</textarea><br>
+					<br>
+			</fieldset>
+			<br>
+			<input type="submit" value="Enviar">
+			<input type="reset" value="Resetear"><br>
+			<br>
+		</form>
+	</body>
+</html>
